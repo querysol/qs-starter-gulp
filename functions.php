@@ -24,7 +24,7 @@
 *****************************************/
 add_action('after_setup_theme', 'qstheme_textdomain');
 function qstheme_textdomain(){
-    load_theme_textdomain('qstheme', THEME . '/languages');
+    load_theme_textdomain('qstheme', get_template_directory() . '/languages');
 }
 
 /*****************************************
